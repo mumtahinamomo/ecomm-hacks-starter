@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 11%;
+
+    --primary: 358 86% 52%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 11%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+
+    --accent: 0 0% 96%;
+    --accent-foreground: 0 0% 11%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 358 86% 52%;
+
+    --radius: 0.25rem;
+
+    /* Custom Uniqlo tokens */
+    --uniqlo-red: 358 86% 52%;
+    --uniqlo-black: 0 0% 11%;
+    --uniqlo-gray: 0 0% 96%;
+    --uniqlo-divider: 0 0% 85%;
+    --uniqlo-text-muted: 0 0% 55%;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 0 0% 11%;
+    --sidebar-primary: 358 86% 52%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 96%;
+    --sidebar-accent-foreground: 0 0% 11%;
+    --sidebar-border: 0 0% 90%;
+    --sidebar-ring: 358 86% 52%;
+  }
+
+  .dark {
+    --background: 0 0% 11%;
+    --foreground: 0 0% 100%;
+
+    --card: 0 0% 11%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 0 0% 11%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 358 86% 52%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 20%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 0 0% 20%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 25%;
+    --input: 0 0% 25%;
+    --ring: 358 86% 52%;
+
+    --sidebar-background: 0 0% 11%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 358 86% 52%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 20%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 0 0% 25%;
+    --sidebar-ring: 358 86% 52%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer components {
+  .uniqlo-link {
+    @apply relative text-foreground font-medium tracking-wide text-sm transition-all duration-200;
+  }
+
+  .uniqlo-link::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-full h-0.5 bg-foreground scale-x-0 origin-left transition-transform duration-200;
+  }
+
+  .uniqlo-link:hover::after {
+    @apply scale-x-100;
+  }
+
+  .filter-section {
+    @apply border-b border-border py-4;
+  }
+
+  .color-swatch {
+    @apply w-3 h-3 rounded-sm border border-border cursor-pointer transition-transform hover:scale-110;
+  }
+
+  .product-card-hover {
+    @apply transition-transform duration-300 hover:scale-[1.02];
+  }
+}
+
+@layer utilities {
+  .glassmorphism {
+    @apply bg-background/80 backdrop-blur-xl border border-border/50;
+  }
+}

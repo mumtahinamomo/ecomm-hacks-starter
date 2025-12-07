@@ -1,130 +1,107 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./static/darkmode.png">
-  <source media="(prefers-color-scheme: light)" srcset="./static/lightmode.png">
-  <img alt="Ecomm Hacks Banner" src="./static/lightmode.png">
-</picture>
+# Outfitted
 
-## The Challenge
+**AI-Powered Virtual Try-On Shopping Experience**
 
-Build the best ecommerce tool you can with Nano Banana Pro and Gemini 3 Pro. You have 24 hours.
+Outfitted revolutionizes online fashion shopping by showing customers how clothes look *on them*, not just on models. Using AI-powered image generation and smart catalog analysis, we eliminate the imagination gap that causes 30% of e-commerce returns.
 
-**What you're working with:**
+## 🎯 The Problem We Solve
 
-Nano Banana Pro is Google's new image generation model built on Gemini 3 Pro. It's designed for commercial use—product photography, background replacement, virtual try-on, marketing materials. It outputs up to 4K resolution and handles text in multiple languages.
+Online fashion has a massive fit and expectation mismatch problem. Customers struggle to visualize how clothes will look on their body type, leading to high return rates and eliminating shopping anxiety. Outfitted bridges this gap by creating a personalized shopping experience where every product is shown on the customer themselves.
 
-Gemini 3 Pro is Google's most advanced reasoning model. It's multimodal (text, images, video, audio, code), has a 1M token context window, and excels at complex reasoning and agentic tasks.
+## ✨ Key Features
 
-**Getting Access:**
+### Smart Catalog Ingestion
+- AI-powered product analysis using Gemini 3 Pro
+- Automatic extraction of style, color, material, and fit metadata
+- Structured product database ready for personalization
 
-1. **Set up your Google Cloud billing account**
-   - Go to [Google AI Studio](https://aistudio.google.com) or [Vertex AI](https://console.cloud.google.com/vertex-ai)
-   - Create or link a Google Cloud project
-   - Enable billing (credit card required)
-   
-2. **Apply your $100 GCP credit**
-   - Each team receives $100 in GCP credits
-   - Credits will be distributed at the start of the hackathon
-   - This covers approximately 745 2K images or 416 4K images
+### Frictionless Digital Twin Onboarding
+- Elegant, high-end storefront interface
+- Quick selfie capture with instant validation
+- Simple height/weight input with beautiful UI
+- Triggered when users show interest in products
 
-**Pricing:**
-- 2K image: $0.134 each
-- 4K image: $0.24 each
+### AI Virtual Try-On Engine
+- Nano Banana Pro for realistic image generation
+- Gemini 3 Pro as the "prompt engineer" for accurate results
+- Face-preserving technology so customers recognize themselves
+- Smart fit recommendations based on body measurements
 
-**Resources:**
-- [Nano Banana Pro Documentation](https://ai.google.dev/gemini-api/docs/image-generation)
-- [Gemini API Docs](https://ai.google.dev/gemini-api/docs)
-- [Google Cloud Billing Setup](https://docs.cloud.google.com/billing/docs/how-to/create-billing-account)
+### Interactive Personal Catalog
+- Personalized email campaigns featuring the customer in seasonal items
+- Beautiful flipbook-style catalog viewer
+- Every page features the customer wearing different products
+- Smart hover interactions with size recommendations and commerce options
+- "Off" toggle to respect user preferences
 
-**What we're looking for:**
+## 🛠️ Technologies Used
 
-1. **Solves a real problem** - Does this address something ecommerce businesses actually struggle with?
-2. **Works well** - Is the execution solid? Does it deliver on what it promises?
-3. **Creative use of the tools** - Are you using Nano Banana Pro and Gemini 3 Pro in interesting ways?
-4. **Glitz, glam, gl-polished user interfaces** ✨ - Because it’s ecommerce, we ascribe a lot of value to excellent user experience. An obvious idea, executed extraordinarily well, in a useful/novel form factor ≥ an ambitious idea that leaves a lot to the imagination.
+- **Vite** - Lightning-fast development environment and build tool
+- **TypeScript** - Type-safe JavaScript for robust development
+- **React** - Modern UI library for building interactive interfaces
+- **shadcn-ui** - Beautiful, accessible component library
+- **Tailwind CSS** - Utility-first CSS framework for custom styling
+- **Gemini 3 Pro** - Vision AI for product analysis and intelligent styling
+- **Nano Banana Pro** - Advanced image generation for virtual try-on
 
-**A note on obvious ideas:**
+## 🚀 Getting Started
 
-Virtual try-on, background replacement, and basic product photography tools are the most straightforward applications of Nano Banana Pro. If you're building one of these, you're competing against what everyone else will think of first. To win with an obvious idea, your execution needs to be exceptional—not just functional, but genuinely better than existing solutions. We're looking for creativity.
+### Prerequisites
+- Node.js (v16 or higher)
+- npm or yarn
 
-Here are the other obvious ones:
+### Installation
 
-**Image generation:**
-
-- Virtual try-on
-- Background replacement
-- Product photography
-- Marketing visuals/ad creative
-
-**Text/chat:**
-
-- Customer service/product guidance chatbot
-- Product description generator
-- Marketing copy writer
-- Review summarizer
-
-Maybe also:
-
-- Visual search (upload image, find similar products)
-- Size recommendation tool
-
-You might make one of these more interesting by:
-
-- Combining two or more obvious ideas into a unified experience, e.g. E2E rich marketing campaign generator, deep research for product reviews
-- Putting one of these in an interesting form factor, e.g. iOS App Clip, Apple TV app, Web Component, PoS/kiosk
-
-**What you need to deliver:**
-
-- **GitHub repo with your code** - Fork this repository and fill out the submission template below with your project details
-- **Live demo** - Hosted URL or demo video showcasing your tool in action
-- **Presentation** - You'll present your project to the group at the end of the 24 hours (5-7 minutes)
-
----
-
-## Your Submission
-
-**Delete the challenge brief above and fill out the sections below:**
-
-### Team Name
-[Your team name]
-
-### Team Members
-- [Name 1]
-- [Name 2]
-- [etc.]
-
-### Demo
-- **Live URL:** [your-app.vercel.app or similar]
-- **Demo Video:** [YouTube/Loom link if applicable]
-
-### What We Built
-[2-3 sentence description of your tool and what problem it solves]
-
-### How It Works
-[Brief explanation of your architecture and how you're using Nano Banana Pro and Gemini 3 Pro]
-
-### Key Features
-- [Feature 1]
-- [Feature 2]
-- [Feature 3]
-
-### Tech Stack
-- **Frontend:** [e.g., Next.js, React, etc.]
-- **Backend:** [e.g., Node.js, Python, etc.]
-- **Models:** Nano Banana Pro, Gemini 3 Pro
-- **Other:** [any other notable tech]
-
-### Setup Instructions
 ```bash
-# How to run your project locally
+# Install dependencies
 npm install
+
+# Run development server
 npm run dev
+
+# Build for production
+npm run build
 ```
 
-### Screenshots
-[Add 2-3 screenshots of your app in action]
+The app will be available at `http://localhost:5173`
 
-### Challenges We Faced
-[What was hard? What did you learn?]
+## 🎨 Design Philosophy
 
-### What's Next
-[If you had more time, what would you add?]
+Outfitted prioritizes a **polished, luxury brand aesthetic** over generic UI components:
+- Custom CSS with glassmorphism effects
+- Smooth animations and transitions
+- Tactile interactions (subtle sound effects, page flips)
+- High-contrast, minimalist typography
+- Elegant, non-clinical input controls
+
+## 📁 Project Structure
+
+```
+outfitted/
+├── src/
+│   ├── components/     # Reusable UI components
+│   ├── pages/          # Main application pages
+│   ├── services/       # API integrations (Gemini, Nano Banana)
+│   ├── utils/          # Helper functions
+│   └── styles/         # Custom styling
+├── public/             # Static assets
+└── data/               # Product catalog JSON
+```
+
+## 🎯 The Experience Flow
+
+1. **Browse** - User explores beautiful storefront
+2. **Capture** - Quick selfie + measurements when interested
+3. **Transform** - AI generates personalized try-on images
+4. **Discover** - Interactive catalog featuring customer in every look
+5. **Shop** - Smart recommendations with confidence
+
+## 🏆 What Makes This Special
+
+- **Not just Virtual Try-On** - It's a complete personalized shopping environment
+- **Gemini as the Brain** - AI curates products, writes fit notes, and engineers perfect prompts
+- **Structure-Preserving VTO** - Clothes stay accurate while the person changes
+- **Retention Loop** - Beautiful email campaigns bring customers back
+
+
+*Transforming online fashion shopping with AI*

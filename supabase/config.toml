@@ -1,0 +1,7 @@
+project_id = "lhencnqzpbtleunfxnrb"
+
+[functions.generate-catalog]
+verify_jwt = false
+
+[functions.virtual-tryon]
+verify_jwt = false
